@@ -42,8 +42,7 @@ export function HeroSection() {
         >
           {/* Outer Glow Layer */}
           <circle className="glow" cx="510" cy="510" r="300"></circle>
-          {/* Main White Circle Animation */}
-          <circle className="circle" cx="510" cy="510" r="300"></circle>
+          {/* Removed: Main White Circle Animation */}
         </svg>
       </div>
     </section>

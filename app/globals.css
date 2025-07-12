@@ -96,3 +96,17 @@ body {
   fill: hsl(var(--primary)); /* Use primary color for the glow in dark mode */
   opacity: 0.2; /* Slightly more visible in dark mode */
 }
+
+/* Keyframes for infinite horizontal scrolling */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Scrolls half the width of the duplicated content */
+  }
+}
+
+.animate-scroll {
+  animation: scroll-left 60s linear infinite; /* Adjust duration as needed for speed */
+}

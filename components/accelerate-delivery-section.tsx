@@ -18,6 +18,7 @@ export function AccelerateDeliverySection() {
             id="svg45"
             xmlnsXlink="http://www.w3.org/1999/xlink"
             xmlns="http://www.w3.org/2000/svg"
+            xmlnsSvg="http://www.w3.org/2000/svg"
             className="max-w-full h-auto" // Ensure responsiveness
           >
             {/*PATH FOR OUTER CIRCULAR DOTTED LINE*/}
