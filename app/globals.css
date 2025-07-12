@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 97%; /* Very light grey from logo background */
+    --foreground: 222.2 84% 4.9%; /* Dark text from logo */
+
+    --muted: 210 40% 96.1%; /* Light Gray */
+    --muted-foreground: 215.4 16.3% 46.9%; /* Medium Gray */
+
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 222.2 84% 4.9%; /* Near Black */
+
+    --border: 214.3 31.8% 91.4%; /* Light Border Gray */
+    --input: 214.3 31.8% 91.4%; /* Light Input Gray */
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 222.2 84% 4.9%; /* Near Black */
+
+    --primary: 210 100% 45%; /* Blue from logo */
+    --primary-foreground: 0 0% 98%; /* Off-white */
+
+    --secondary: 210 40% 96.1%; /* Light Gray */
+    --secondary-foreground: 222.2 47.4% 11.2%; /* Dark Gray */
+
+    --destructive: 0 100% 50%; /* Red from logo */
+    --destructive-foreground: 0 0% 98%; /* Off-white */
+
+    --ring: 210 100% 45%; /* Blue from logo */
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%; /* Near Black */
+    --foreground: 210 40% 96.1%; /* Off-white */
+
+    --muted: 217.2 32.6% 17.5%; /* Dark Gray */
+    --muted-foreground: 215 20.2% 65.1%; /* Light Gray */
+
+    --popover: 222.2 84% 4.9%; /* Near Black */
+    --popover-foreground: 210 40% 96.1%; /* Off-white */
+
+    --border: 217.2 32.6% 17.5%; /* Dark Border Gray */
+    --input: 217.2 32.6% 17.5%; /* Dark Input Gray */
+    --card: 222.2 84% 4.9%; /* Near Black */
+    --card-foreground: 210 40% 96.1%; /* Off-white */
+
+    --primary: 210 100% 65%; /* Lighter Blue for dark mode */
+    --primary-foreground: 222.2 47.4% 11.2%; /* Dark Gray */
+
+    --secondary: 217.2 32.6% 17.5%; /* Dark Gray */
+    --secondary-foreground: 210 40% 96.1%; /* Off-white */
+
+    --destructive: 0 100% 65%; /* Lighter Red for dark mode */
+    --destructive-foreground: 0 0% 98%; /* Off-white */
+
+    --ring: 210 100% 65%; /* Lighter Blue for dark mode */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* New CSS for the circular SVG background */
+.circle-svg .circle {
+  fill: hsl(var(--background)); /* Use background color for the circle */
+  stroke: none;
+}
+
+.circle-svg .glow {
+  fill: hsl(var(--primary)); /* Use primary color for the glow */
+  filter: blur(50px); /* Adjust blur as needed for glow effect */
+  opacity: 0.1; /* Subtle opacity */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.dark .circle-svg .glow {
+  fill: hsl(var(--primary)); /* Use primary color for the glow in dark mode */
+  opacity: 0.2; /* Slightly more visible in dark mode */
+}
