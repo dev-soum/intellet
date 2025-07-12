@@ -4,13 +4,13 @@ export const navigationData = [
     name: "Who We Are",
     href: "/who-we-are",
     children: [
-      { name: "Our Story", href: "/who-we-are/our-story" },
+      { name: "About Us", href: "/who-we-are/about-us" },
       { name: "Leadership Team", href: "/who-we-are/leadership-team" },
       { name: "Our Global Presence", href: "/who-we-are/global-presence" },
     ],
   },
   {
-    name: "What We Do", // This will be the mega menu trigger
+    name: "What We Do",
     href: "/what-we-do",
     isMegaMenu: true,
     children: [
@@ -29,72 +29,63 @@ export const navigationData = [
       {
         category: "Cloud & Application Services",
         items: [
-          { name: "Azure, AWS, GCP Engineering", href: "/what-we-do/cloud-app-services/cloud-engineering" },
-          { name: "DevOps & DevSecOps", href: "/what-we-do/cloud-app-services/devops-devsecops" },
-          { name: "App Modernization & Microservices", href: "/what-we-do/cloud-app-services/app-modernization" },
-          { name: "API & Integration Services", href: "/what-we-do/cloud-app-services/api-integration" },
+          { name: "Azure, AWS, GCP Engineering", href: "/what-we-do/cloud-engineering" },
+          { name: "DevOps & DevSecOps", href: "/what-we-do/devops-devsecops" },
+          { name: "App Modernization & Microservices", href: "/what-we-do/app-modernization" },
+          { name: "API & Integration Services", href: "/what-we-do/api-integration" },
         ],
       },
       {
         category: "SAP Services",
         items: [
-          { name: "SAP S/4HANA Migration", href: "/what-we-do/sap-services/s4hana-migration" },
-          { name: "SAP BTP, ABAP, Fiori Development", href: "/what-we-do/sap-services/btp-abap-fiori" },
-          { name: "SAP AMS & Managed Support", href: "/what-we-do/sap-services/ams-managed-support" },
+          { name: "SAP S/4HANA Migration", href: "/what-we-do/s4hana-migration" },
+          { name: "SAP BTP, ABAP, Fiori Development", href: "/what-we-do/btp-abap-fiori" },
+          { name: "SAP AMS & Managed Support", href: "/what-we-do/ams-managed-support" },
         ],
       },
       {
         category: "Managed IT Services",
         items: [
-          { name: "Infra & Network Monitoring (24/7 NOC)", href: "/what-we-do/managed-it-services/infra-monitoring" },
-          { name: "Application Support (L1-L3)", href: "/what-we-do/managed-it-services/app-support" },
-          { name: "ITSM, Service Desk & CoE", href: "/what-we-do/managed-it-services/itsm-service-desk" },
-          {
-            name: "Managed Resource Services (TMS)",
-            href: "/what-we-do/managed-it-services/managed-resource-services",
-          },
+          { name: "Infra & Network Monitoring (24/7 NOC)", href: "/what-we-do/infra-monitoring" },
+          { name: "Application Support (L1-L3)", href: "/what-we-do/app-support" },
+          { name: "ITSM, Service Desk & CoE", href: "/what-we-do/itsm-service-desk" },
+          { name: "Managed Resource Services (TMS)", href: "/what-we-do/managed-resource-services" },
         ],
       },
       {
         category: "Data & Analytics",
         items: [
-          { name: "Data Engineering & ETL", href: "/what-we-do/data-analytics/data-engineering" },
-          { name: "Business Intelligence & Dashboards", href: "/what-we-do/data-analytics/bi-dashboards" },
-          { name: "Data Governance & Security", href: "/what-we-do/data-analytics/data-governance" },
-          { name: "Azure Data Lake, Snowflake, Power BI", href: "/what-we-do/data-analytics/azure-snowflake-powerbi" },
+          { name: "Data Engineering & ETL", href: "/what-we-do/data-engineering" },
+          { name: "Business Intelligence & Dashboards", href: "/what-we-do/bi-dashboards" },
+          { name: "Data Governance & Security", href: "/what-we-do/data-governance" },
+          { name: "Azure Data Lake, Snowflake, Power BI", href: "/what-we-do/azure-snowflake-powerbi" },
         ],
       },
       {
-        category: "Engineering & Manufacturing IT",
+        category: "Digital Engineering",
         items: [
-          { name: "PLM, CAD/CAE Automation", href: "/what-we-do/engineering-manufacturing-it/plm-cad-automation" },
-          { name: "MES Integration & IoT", href: "/what-we-do/engineering-manufacturing-it/mes-iot" },
-          { name: "Digital Twins & Smart Factory", href: "/what-we-do/engineering-manufacturing-it/digital-twins" },
-          { name: "Industry 4.0 Solutions", href: "/what-we-do/engineering-manufacturing-it/industry-4-solutions" },
+          { name: "PLM, CAD/CAE Automation", href: "/what-we-do/plm-cad-automation" },
+          { name: "MES Integration & IoT", href: "/what-we-do/mes-iot" },
+          { name: "Digital Twins & Smart Factory", href: "/what-we-do/digital-twins" },
+          { name: "Industry 4.0 Solutions", href: "/what-we-do/industry-4-solutions" },
         ],
       },
       {
         category: "Healthcare & Life Sciences IT",
         items: [
-          { name: "HL7/FHIR Integration", href: "/what-we-do/healthcare-life-sciences-it/hl7-fhir-integration" },
-          { name: "Clinical Data Platforms", href: "/what-we-do/healthcare-life-sciences-it/clinical-data-platforms" },
-          {
-            name: "AI in Imaging & Diagnostics",
-            href: "/what-we-do/healthcare-life-sciences-it/ai-imaging-diagnostics",
-          },
-          {
-            name: "Compliance & Regulatory IT",
-            href: "/what-we-do/healthcare-life-sciences-it/compliance-regulatory-it",
-          },
+          { name: "HL7/FHIR Integration", href: "/what-we-do/hl7-fhir-integration" },
+          { name: "Clinical Data Platforms", href: "/what-we-do/clinical-data-platforms" },
+          { name: "AI in Imaging & Diagnostics", href: "/what-we-do/ai-imaging-diagnostics" },
+          { name: "Compliance & Regulatory IT", href: "/what-we-do/compliance-regulatory-it" },
         ],
       },
       {
         category: "Talent Solutions",
         items: [
-          { name: "IT Staff Augmentation", href: "/what-we-do/talent-solutions/it-staff-augmentation" },
-          { name: "Healthcare & Life Sciences Staffing", href: "/what-we-do/talent-solutions/healthcare-staffing" },
-          { name: "Direct Hire & Contract-to-Hire", href: "/what-we-do/talent-solutions/direct-contract-hire" },
-          { name: "Corp-to-Corp & W2", href: "/what-we-do/talent-solutions/corp-to-corp-w2" },
+          { name: "IT Staff Augmentation", href: "/what-we-do/it-staff-augmentation" },
+          { name: "Healthcare & Life Sciences Staffing", href: "/what-we-do/healthcare-staffing" },
+          { name: "Direct Hire & Contract-to-Hire", href: "/what-we-do/direct-contract-hire" },
+          { name: "Corp-to-Corp & W2", href: "/what-we-do/corp-to-corp-w2" },
         ],
       },
     ],
@@ -127,7 +118,7 @@ export const navigationData = [
     ],
   },
   {
-    name: "Industries",
+    name: "Industries (We Serve)",
     href: "/industries",
     children: [
       { name: "Healthcare & Life Sciences", href: "/industries/healthcare-life-sciences" },
@@ -136,6 +127,10 @@ export const navigationData = [
       { name: "Banking & Financial Services", href: "/industries/banking-financial-services" },
       { name: "Retail & Consumer Goods", href: "/industries/retail-consumer-goods" },
       { name: "Energy & Utilities", href: "/industries/energy-utilities" },
+      { name: "Technology & Software", href: "/industries/technology-software" },
+      { name: "Government & Public Sector", href: "/industries/government-public-sector" },
+      { name: "Education", href: "/industries/education" },
+      { name: "Transportation & Logistics", href: "/industries/transportation-logistics" },
     ],
   },
   {

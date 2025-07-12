@@ -42,6 +42,9 @@ export function Footer() {
           <Link href="#contact" className="text-muted-foreground hover:text-primary transition-colors">
             Contact
           </Link>
+          <Link href="/sitemap" className="text-muted-foreground hover:text-primary transition-colors">
+            Site Overview
+          </Link>
         </div>
         <div className="grid gap-2">
           <h3 className="font-semibold text-lg mb-2">Contact Us</h3>
