@@ -34,8 +34,8 @@ export function ClientsSection() {
   const duplicatedLogos = [...clientLogos, ...clientLogos]
 
   return (
-    <section className="w-full py-16 md:py-24 lg:py-32 bg-background">
-      <div className="container px-4 md:px-6 text-center mb-12 animate-in fade-in slide-in-from-bottom-8 duration-700 ease-out">
+    <section className="w-full py-16 md:py-24 lg:py-32 bg-background animate-in fade-in slide-in-from-bottom-8 duration-700 ease-out">
+      <div className="container px-4 md:px-6 text-center mb-12">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Valued Clients</h2>
         <p className="mt-4 text-muted-foreground md:text-xl">Trusted by leading companies across various industries.</p>
       </div>
